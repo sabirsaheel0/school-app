@@ -4,7 +4,7 @@ services:
     restart: always
     ports:
     - "27017:27017"
-    envoirnment: 
+    environment: 
       MONGO_INITDB_ROOT_USERNAME: myUser
       MONGO_INITDB_ROOT_PASSWORD: myPassword
       MONGO_INITDB_DATABASE: "kindergarten"
@@ -12,5 +12,5 @@ services:
     volumes:
     - mongo-data:/data/db
 
-  volumes:
-    mongo-data:
+volumes:
+  mongo-data:
