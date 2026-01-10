@@ -1,4 +1,15 @@
 services:
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: no
+    ports:
+      - "80:80"
+    depends_on:
+      - client
+      - api_java_teacherservice
+      - api_golang_studentservice
+      - api_python_employeeservice
   mongo:
     image: mongo
     restart: always
@@ -16,7 +27,7 @@ services:
     ports:
       - "3000:3000"
 
-  api_python:
+  api_python_employeeservice:
     build: ./employeeservice
     ports:
       - "5003:5003"
@@ -26,7 +37,7 @@ services:
     depends_on:
       - mongo
 
-  api_golang:
+  api_golang_studentservice:
     build: ./studentservice
     ports:
       - "5001:5001"
@@ -36,7 +47,7 @@ services:
     depends_on:
       - mongo
 
-  api_java:
+  api_java_teacherservice:
     build: ./teacherservice
     ports:
       - "5002:5002"
