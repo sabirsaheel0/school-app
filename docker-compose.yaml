@@ -25,7 +25,7 @@ services:
   client:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "3000:80"
 
   api_python_employeeservice:
     build: ./employeeservice
