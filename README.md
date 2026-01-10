@@ -1,3 +1,10 @@
+Working screenshots for both docker and local
+
+<img width="1920" height="1080" alt="Screenshot 2026-01-09 215534" src="https://github.com/user-attachments/assets/b3eb2bc9-d51e-47fe-86b5-9890151503ce" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-01-09 215542" src="https://github.com/user-attachments/assets/aa8e1421-ebc3-40c5-8152-6602527d60ae" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-01-09 215546" src="https://github.com/user-attachments/assets/eeaa7c92-ffd9-4334-bb98-5fa66a0b7215" />
 
 # Kindergarten Project – Run Locally
 
